@@ -5,8 +5,8 @@ let sum;
 let avgTemp;
 
 tempratures = [18, 28, 36, 45, 78, 73, 67, 82, 14];
-i = 0;
-for (i = 0, i < tempratures.length, i++){
+sum = 0;
+for (let i = 0, i < tempratures.length, i++){
     sum += tempratures[i];
 }
 
