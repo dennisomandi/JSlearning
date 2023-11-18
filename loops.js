@@ -17,3 +17,29 @@ if (!Number.isNaN(UpperLimit) && !Number.isNaN(LowerLimit) && UpperLimit > Lower
 for (i = UpperLimit; i >= LowerLimit; i -= 10){
     console.log(i);
 }
+
+//TASK 2 //
+/*There are ten different numbers in the following numbers array:
+
+let numbers = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
+
+Write a program that first writes out all these numbers on the console, 
+then only those that are even (hint: the remainder of dividing an even number by 2 is equal to 0), 
+then only those that are larger than 10 and at the same time smaller than 60.*/
+
+let numbers = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
+for (i in numbers){
+    console.log(i);
+}
+
+for (i in numbers){
+    if (i % 2 === 0){
+        console.log(i);
+    }
+}
+
+for (i in numbers){
+    if (i > 10 && i < 60){
+        console.log(i);
+    }
+}
