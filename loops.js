@@ -43,3 +43,40 @@ for (i in numbers){
         console.log(i);
     }
 }
+
+//TASK 3 //
+/* 
+Write a program using a loop that will ask the user for the name of the movie (first prompt) and its rating from www.imdb.com (second prompt). 
+The program will allow you to enter as many movies as you want into the movies array. 
+Each element of the array will be an object, consisting of two fields: title and imdb. 
+The input is completed if the user presses Cancel in the prompt dialog. 
+Then the program should first print out to the console all movies that have a rating of less than 7, 
+then those whose rating is greater than or equal to 7. 
+Write the name of the movie and its rating next to each other, e.g.:
+*/
+
+let movies = [];
+while (true){
+let title = prompt("Title of the movie");
+let rating = prompt("What the IMDB rating of the movie");
+
+if (movie === null || rating === null){
+    break;
+} else {
+    movies.push({title : movie, rating: Number(rating)});
+}
+}
+console.log("All with ratings under 7:");
+for (movie of movies) {
+    if (movie.rating < 7) {
+        console.log(`${movie.title} (${movie.rating})`);
+    }
+}
+
+console.log("All with ratings over 7:");
+for (movie of movies) {
+    if (movie.rating >= 7) {
+        console.log(`${movie.title} (${movie.rating})`);
+        break;
+    }
+}
