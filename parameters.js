@@ -11,3 +11,11 @@ console.log(`mean: ${getMeanTemp(day1)}`); // -> mean:
 let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16];
 console.log(`mean: ${getMeanTemp(day2)}`); // -> mean:
 18.083333333333332
+
+/* You can pass any type of data as arguments to the function, both simple and complex. 
+Let's write the getElement function, which will return the selected element from the array, 
+with the array and index of the element being the function's parameters. */
+
+let names = ["Alice", "Bob", "Eve", "John"];
+let name = getElement(names, 2);
+console.log(name); // -> Eve
